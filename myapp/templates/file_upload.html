@@ -1,0 +1,132 @@
+<!-- myapp/templates/file_upload.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Inter:wght@400;700&family=Lexend+Deca&family=Roboto:wght@300;700&family=Tiro+Devanagari+Sanskrit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>File Upload</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="navbar">
+        <a href="#" class="navbar-brand">EMOTION RECOGNIZER</a>
+        <div class="navbar-buttons">
+          <button id="b1" onclick="scrollToSection('section1')">
+            About Project
+          </button>
+          <button id="b2" onclick="scrollToSection('section2')">
+            Get Started
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <h1>
+          Understand your <br />
+          <span class="auto-type"></span>
+        </h1>
+      </div>
+    </div>
+    <div class="cont reveal">
+      <div id="section1">
+        <h1>Why are we better?</h1>
+        <div class="timeline">
+          <div class="timeline-line"></div>  <div class="containersec1 left-container">
+            <p class="no">1</p>
+            <div class="text-box">
+              <h2>Feature Extraction</h2>
+              <p>
+                The feature extraction module optimally processes auditory and visual inputs, employing efficient face extraction techniques to enhance model effectiveness.</p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+          <div class="containersec1 right-container">
+            <p class="no">2</p>
+            <div class="text-box">
+              <h2>Multimodal Fusion</h2>
+              <p>
+                The multimodal fusion modules intricately blend diverse auditory and visual information, dynamically adjusting importance to enhance emotional cue understanding and discriminative power.</p>
+              <span class="right-container-arrow">&gt;</span>
+            </div>
+          </div>
+          <div class="containersec1 left-container">
+            <p class="no">3</p>
+            <div class="text-box">
+              <h2>Intermediate Attention Fusion</h2>
+              <p>I
+                Intermediate attention fusion dynamically adjusts the importance of different modalities and features, enhancing the model's ability to capture nuanced emotional cues through a synergistic integration of auditory and visual signals.</p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+          <div class="containersec1 right-container">
+            <p class="no">4</p>
+            <div class="text-box">
+              <h2>Late Transformer Fusion</h2>
+              <p>
+                Transformer fusion, integrated with attention mechanisms, combines diverse input formats from both auditory and visual branches, facilitating early comprehension of complex patterns and enhancing emotion recognition capabilities.</p>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+          <div class="containersec1 left-container">
+            <p class="no">5</p>
+            <div class="text-box">
+              <h2>Modality Dropout</h2>
+              <p>
+                Modality dropout selectively excludes certain modalities, such as audio or visual data, during training iterations, encouraging the model to rely on diverse input sources and enhancing its robustness to variations in data.</p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+          <div class="containersec1 right-container">
+            <p class="no">6</p>
+            <div class="text-box">
+              <h2>Community Accepted Datasets</h2>
+              <p>
+                The RAVDESS dataset, a community-accepted resource, encompasses audiovisual recordings of emotional speech and song performances by professional actors, facilitating emotion recognition research.</p>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="cont reveal">
+      <div id="section2">
+        <div class="headsec2">
+          <h1>Find out yourself!</h1>
+          <h2>Start by uploading a video file</h2>
+        </div>
+        <div class="content-wrapper">
+          <div class="image-container">
+            <!-- Your image goes here -->
+            <img src="static/images/image.png" alt="Image">
+          </div>
+          <div class="form">
+          <div class="form-container">
+            <!-- Your form goes here -->
+            <form id="myForm" method="post" enctype="multipart/form-data">
+              {% csrf_token %} {{ form.as_p }}
+            </form>
+            
+          </div>
+          <button type="submit" form="myForm" class="submit-button">
+            Upload
+          </button>
+        </div>
+          </div>
+      </div>
+    </div>
+    
+    <footer>
+      <p>Created by Vigya Sharma (20BCE1559) for Capstone Project</p>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>

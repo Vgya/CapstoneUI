@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: #1a1a1e;
+  }
+  .hero {
+    background-image: radial-gradient(ellipse farthest-side , #39527b, #1a1a1e 95%);
+
+  }
+ 
+  .navbar {
+    overflow: hidden;
+    
+  }
+
+  /* Style for the navigation bar text */
+  .navbar-brand {
+    float: left; /* Text aligned to the left */
+    padding: 14px 16px; /* Padding around the text */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Text size */
+    font-family: "Jost";
+    letter-spacing: 3px;
+    font-weight:normal;
+    margin-top: 20px;
+  }
+
+  /* Style for the buttons on the right side */
+  .navbar-buttons {
+    float: right; /* Buttons aligned to the right */
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  /* Style for individual button */
+  .navbar-buttons button {
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Padding around the button text */
+    margin: 8px 4px; /* Margin between buttons */
+    cursor: pointer; /* Cursor style on hover */
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "Inter";
+  }
+  #b1 {
+    background-color:#39527B ;
+    border: solid #39527B;
+    padding-top:11px;
+    padding-bottom: 11px;
+  }
+  #b2 {
+    border: solid #6881AA;
+    background-color: #1a1a1e;
+  }
+
+  #b1:hover {
+    background-color: #1a1a1e;
+    border: solid #6881AA;
+    color: #eeeeee;
+  }
+
+  #b2:hover {
+    color:#6881AA;
+  }
+
+  /* Style for button hover */
+  .navbar-buttons button:hover {
+    background-color: #777; /* Background color on hover */
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container h1 {
+    font-size: 80px;
+    font-weight: 600;
+    font-family: "Antic Didone", serif;
+    font-weight: 1000;
+    font-style: normal;
+  }
+  span {
+    color: #4f97fc;
+  }
+  #section1 h1 {
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Satoshi";
+    font-size: 80px;
+    font-weight: 1000;
+    font-style: normal;
+    padding-bottom: 20px;
+  }
+
+  .timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+  }
+
+  .containersec1{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 30s linear forwards;
+    opacity: 0;
+  }
+
+  @keyframes movedown {
+
+    0%{
+      opacity: 1;
+      transform: translateY(-30px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    
+  }
+
+  .containersec1:nth-child(1)
+  {
+    animation-delay:15s ;
+  }
+  .containersec1:nth-child(2)
+  {
+    animation-delay:17s ;
+  }
+  .containersec1:nth-child(3)
+  {
+    animation-delay:19s ;
+  }
+  .containersec1:nth-child(4)
+  {
+    animation-delay:21s ;
+  }
+  .containersec1:nth-child(5)
+  {
+    animation-delay:23s ;
+  }
+  .containersec1:nth-child(6)
+  {
+    animation-delay:25s ;
+  }
+
+  .text-box{
+    padding: 20px 30px;
+    background: #1a1a1e;
+    position: relative;
+    border: 6px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 5px solid #39527B;
+    box-shadow: 2px 4px 0px #39527B;
+  }
+
+  .text-box h2{
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-family: "Satoshi";
+    color: #4f97fc;
+  }
+
+  .text-box p{
+    color: #eeeeee;
+    font-family: "Satoshi";
+  }
+
+  .left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #39527b;
+    right: -17px;
+  }
+
+  .right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #39527B;
+    left: -17px;
+  }
+
+  .left-container{
+    left: -0.5%;
+  }
+  .right-container{
+    left: 50.5%;
+  }
+
+  .no{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+    background-color: #39527B;
+    text-align: center;
+    line-height: 30px; 
+    color: #4f97fc;
+    font-family: "Satoshi";
+    font-weight: bolder;
+  }
+
+  .right-container p.no{
+    left: -20px;
+  }
+
+  .timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top:0;
+    left:50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 30s linear forwards;
+  }
+
+  @keyframes moveline {
+    
+    0%{
+      height: 0;
+    }
+    100%{
+      height: 100%;
+    }
+  }
+
+
+  /*#section2 .image-container {
+    width: 40%;
+  }
+
+  #section2 .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #section2 .right-side {
+    width: 60%;
+    padding-left: 20px;
+  }*/
+
+
+
+  /*#section2 h1 {
+    color: #cab08d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Antic Dione", serif;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1.5px;
+  }
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  #section2 h2 {
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Antic Dione", serif;
+    font-size: 30px;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    padding-top: 30px;
+  }*/
+
+  /*#section2{
+    display: flex;
+  }
+  
+  .rightside {
+    float: right;
+    width: 60%;
+  }
+  
+  .image-container {
+    float: left;
+    width: 40%;
+  }
+  
+  .rightside-content {
+    margin-top: 20px; }/* Add some spacing between the headings and the content */
+
+  .headsec2 h1{
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Satoshi";
+    font-size: 80px;
+    font-weight: 1000;
+    font-style: normal;
+    padding-bottom: 20px;
+    margin-top: 100px;
+  }
+
+  .headsec2 h2{
+    color: #4f97fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Satoshi";
+    font-size: 40px;
+    font-weight: 1000;
+    font-style: normal;
+    padding-bottom: 20px;
+  }
+  .content-wrapper {
+    display: flex;
+  }
+  
+  .image-container {
+    width: 40%;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .form-container {
+    width: 60%;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
+  .form-container {
+    margin-top: 20px;
+    margin-left: 100px;
+    background-color:#eeeeee;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add optional rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    border-style:dashed;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  #section2 button{
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Padding around the button text */
+    margin: 8px 4px; /* Margin between buttons */
+    cursor: pointer; /* Cursor style on hover */
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "Inter";
+    background-color:#39527B ;
+    border: solid #39527B;
+    box-shadow: 2px 2px 4px #4f97fc;
+    padding-top:11px;
+    padding-bottom: 11px;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+
+
+ #section2 button:hover{
+    background-color: #1a1a1e;
+    border: solid #6881AA;
+    color: #eeeeee;
+  }
+
+  footer {
+    background-color: #1a1a1e;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #eeeeee;
+    font-family: "Satoshi";
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+    
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
