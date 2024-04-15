@@ -103,12 +103,10 @@
         </div>
         <div class="content-wrapper">
           <div class="image-container">
-            <!-- Your image goes here -->
             <img src="static/images/image.png" alt="Image">
           </div>
           <div class="form">
           <div class="form-container">
-            <!-- Your form goes here -->
             <form id="myForm" method="post" enctype="multipart/form-data">
               {% csrf_token %} {{ form.as_p }}
             </form>
