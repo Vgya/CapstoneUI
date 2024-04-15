@@ -16,33 +16,33 @@
     
   }
 
-  /* Style for the navigation bar text */
+
   .navbar-brand {
-    float: left; /* Text aligned to the left */
-    padding: 14px 16px; /* Padding around the text */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Text size */
+    float: left; 
+    padding: 14px 16px; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px; 
     font-family: "Jost";
     letter-spacing: 3px;
     font-weight:normal;
     margin-top: 20px;
   }
 
-  /* Style for the buttons on the right side */
+
   .navbar-buttons {
-    float: right; /* Buttons aligned to the right */
+    float: right;
     margin-right: 10px;
     margin-top: 20px;
   }
 
   /* Style for individual button */
   .navbar-buttons button {
-    color: white; /* Button text color */
-    border: none; /* Remove button border */
-    padding: 10px 20px; /* Padding around the button text */
-    margin: 8px 4px; /* Margin between buttons */
-    cursor: pointer; /* Cursor style on hover */
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 8px 4px; 
+    cursor: pointer; 
     border-radius: 5px;
     font-size: 20px;
     font-family: "Inter";
@@ -68,9 +68,9 @@
     color:#6881AA;
   }
 
-  /* Style for button hover */
+  
   .navbar-buttons button:hover {
-    background-color: #777; /* Background color on hover */
+    background-color: #777;
   }
   .container {
     width: 100%;
@@ -388,10 +388,10 @@
   
 
   #section2 button{
-    color: white; /* Button text color */
-    padding: 10px 20px; /* Padding around the button text */
-    margin: 8px 4px; /* Margin between buttons */
-    cursor: pointer; /* Cursor style on hover */
+    color: white; 
+    padding: 10px 20px; 
+    margin: 8px 4px; 
+    cursor: pointer; 
     border-radius: 5px;
     font-size: 20px;
     font-family: "Inter";
